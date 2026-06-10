@@ -65,6 +65,10 @@ summaryLength = 28
     pageRef = "/now"
     weight = 25
   [[menus.main]]
+    name = "Resume"
+    pageRef = "/resume"
+    weight = 26
+  [[menus.main]]
     name = "Search"
     pageRef = "/search"
     weight = 28

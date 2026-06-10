@@ -768,3 +768,47 @@
     flex-direction: column;
   }
 }
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .site-shell {
+    max-width: none;
+    padding: 0;
+  }
+
+  .site-header,
+  .site-footer,
+  .tags,
+  .article__meta {
+    display: none;
+  }
+
+  .article {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .article__title {
+    font-size: 2rem;
+  }
+
+  .prose {
+    color: black;
+    font-size: 10.5pt;
+    max-width: none;
+  }
+
+  .prose h2 {
+    break-after: avoid;
+    font-size: 1rem;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
