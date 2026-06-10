@@ -6,7 +6,7 @@
 {{ with .OutputFormats.Get "RSS" }}<link rel="alternate" type="application/rss+xml" title="{{ site.Title }} RSS" href="{{ .Permalink }}">{{ end }}
 <link rel="alternate" type="application/json" title="{{ site.Title }} search index" href="/index.json">
 <link rel="search" type="application/opensearchdescription+xml" title="{{ site.Title }}" href="/opensearch.xml">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="stylesheet" href="/css/site.css">
 <meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }}{{ end }}">
