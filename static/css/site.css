@@ -354,6 +354,49 @@
     margin: 0 0 1rem;
   }
 
+  .archive {
+    display: grid;
+    gap: 2rem;
+  }
+
+  .archive__year {
+    border-top: 1px solid var(--color-line);
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 9rem minmax(0, 1fr);
+    padding-top: 1.25rem;
+  }
+
+  .archive__heading {
+    font-family: var(--font-mono);
+    font-size: 1rem;
+  }
+
+  .archive__list {
+    display: grid;
+    gap: 0.75rem;
+    list-style: none;
+    padding: 0;
+  }
+
+  .archive__item {
+    align-items: baseline;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 5rem minmax(0, 1fr);
+  }
+
+  .archive__date {
+    color: var(--color-muted);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+  }
+
+  .archive__link {
+    font-weight: 700;
+    text-decoration: none;
+  }
+
   .info-card {
     background: var(--color-surface);
     border-radius: var(--radius);
@@ -506,6 +549,11 @@
 
   .profile-card {
     max-width: 22rem;
+  }
+
+  .archive__year,
+  .archive__item {
+    grid-template-columns: 1fr;
   }
 }
 
