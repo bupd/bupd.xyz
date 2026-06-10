@@ -458,6 +458,33 @@
     text-transform: uppercase;
   }
 
+  .tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .tag-cloud__link {
+    align-items: center;
+    background: var(--color-surface);
+    border-radius: 999px;
+    display: inline-flex;
+    gap: 0.5rem;
+    padding: 0.7rem 0.95rem;
+    text-decoration: none;
+  }
+
+  .tag-cloud__count {
+    background: var(--color-ink);
+    border-radius: 999px;
+    color: var(--color-canvas);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    min-width: 1.6rem;
+    padding: 0.1rem 0.4rem;
+    text-align: center;
+  }
+
   .info-card {
     background: var(--color-surface);
     border-radius: var(--radius);
