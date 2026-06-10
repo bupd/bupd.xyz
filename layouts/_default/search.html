@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <header class="page-header">
+    <p class="section-label">Find things</p>
+    <h1 class="page-title">Search</h1>
+    <p class="page-description">Client-side search over the static content index. No backend, no tracking, no external service.</p>
+  </header>
+
+  <section class="search-box" aria-label="Site search">
+    <label class="section-label" for="site-search">Search bupd.xyz</label>
+    <input class="search-box__input" id="site-search" name="q" type="search" placeholder="Try Kubernetes, Harbor, Vim, GitHub Actions..." autocomplete="off">
+  </section>
+
+  <p class="search-status" id="search-status">Loading search index...</p>
+  <div class="post-list" id="search-results" aria-live="polite"></div>
+  <script src="/js/search.js" defer></script>
+{{ end }}
