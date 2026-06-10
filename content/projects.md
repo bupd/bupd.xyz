@@ -1,9 +1,10 @@
 ---
 title: "Projects"
 description: "Open source and personal projects from Prasanth Baskar."
+layout: "projects"
 ---
 
-These are the workstreams I want this site to point people toward.
+These are the workstreams I want this site to point people toward. The project bucket below is based on public GitHub contribution activity from the past year, with repository owners and logos pulled from GitHub.
 
 ## Harbor and container registries
 

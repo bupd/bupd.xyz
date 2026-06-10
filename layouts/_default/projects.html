@@ -1,0 +1,41 @@
+{{ define "main" }}
+  <header class="page-header">
+    <p class="section-label">Project bucket</p>
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="page-description">{{ . }}</p>{{ end }}
+  </header>
+
+  <article class="article">
+    <div class="prose">{{ .Content }}</div>
+  </article>
+
+  <section class="section">
+    <div class="section__header">
+      <div>
+        <p class="section-label">Past year</p>
+        <h2 class="section__title">Contribution bucket</h2>
+      </div>
+      <a class="button button--ghost" href="https://github.com/bupd">GitHub profile</a>
+    </div>
+    <div class="project-bucket">
+      {{ range sort site.Data.project_bucket "contributions" "desc" }}
+        <article class="project-card">
+          <div class="project-card__header">
+            <a href="{{ .ownerUrl }}"><img class="project-card__logo" src="{{ .logo }}" alt="{{ .owner }} logo" loading="lazy"></a>
+            <div>
+              <p class="project-card__owner">{{ .owner }}</p>
+              <h3 class="project-card__title"><a href="{{ .url }}">{{ .name }}</a></h3>
+            </div>
+          </div>
+          <p class="project-card__description">{{ .description }}</p>
+          <p class="project-card__focus">{{ .focus }}</p>
+          <div class="project-card__meta">
+            <span>{{ .contributions }} contributions</span>
+            {{ with .language }}<span>{{ . }}</span>{{ end }}
+            <span>{{ .stars }} stars</span>
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
