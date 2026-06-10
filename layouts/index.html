@@ -36,6 +36,21 @@
   <section class="section">
     <div class="section__header">
       <div>
+        <p class="section-label">Recorded talks</p>
+        <h2 class="section__title">Watch</h2>
+      </div>
+      <a class="button button--ghost" href="/talks/">All talks</a>
+    </div>
+    <div class="talk-grid">
+      {{ range first 2 (where site.RegularPages "Section" "talks").ByWeight }}
+        {{ partial "talk-card.html" . }}
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section__header">
+      <div>
         <p class="section-label">Current lanes</p>
         <h2 class="section__title">What I write about</h2>
       </div>

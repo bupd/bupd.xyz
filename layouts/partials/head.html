@@ -13,6 +13,8 @@
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:image" content="{{ site.Params.avatar }}">
+{{ $image := site.Params.avatar }}
+{{ with .Params.youtube_id }}{{ $image = printf "https://i.ytimg.com/vi/%s/hqdefault.jpg" . }}{{ end }}
+<meta property="og:image" content="{{ $image }}">
 <meta name="twitter:card" content="summary_large_image">
 {{ partial "jsonld.html" . }}
