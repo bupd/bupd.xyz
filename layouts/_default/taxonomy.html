@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <header class="page-header">
+    <p class="section-label">Topic</p>
+    <h1 class="page-title">{{ .Title }}</h1>
+    <p class="page-description">Posts tagged with {{ .Title }}.</p>
+  </header>
+
+  <div class="post-list">
+    {{ range .Pages }}
+      {{ partial "post-card.html" . }}
+    {{ end }}
+  </div>
+{{ end }}

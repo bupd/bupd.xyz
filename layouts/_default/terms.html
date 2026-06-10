@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <header class="page-header">
+    <p class="section-label">Topics</p>
+    <h1 class="page-title">Tags</h1>
+    <p class="page-description">Browse writing by topic.</p>
+  </header>
+
+  <section class="tag-cloud" aria-label="All tags">
+    {{ range .Data.Terms.ByCount }}
+      <a class="tag-cloud__link" href="{{ .Page.RelPermalink }}">
+        <span>{{ .Page.Title }}</span>
+        <span class="tag-cloud__count">{{ .Count }}</span>
+      </a>
+    {{ end }}
+  </section>
+{{ end }}
