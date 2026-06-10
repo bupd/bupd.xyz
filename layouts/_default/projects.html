@@ -1,0 +1,24 @@
+{{ define "main" }}
+  <header class="page-header">
+    <p class="section-label">Project bucket</p>
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="page-description">{{ . }}</p>{{ end }}
+  </header>
+
+  <article class="article">
+    <div class="prose">{{ .Content }}</div>
+  </article>
+
+  {{ with site.Data.project_bucket }}
+    <section class="project-bucket" aria-label="Contribution project bucket">
+      {{ range sort . "contributions" "desc" }}
+        <article class="project-card">
+          <img class="project-card__logo" src="{{ .logo }}" alt="{{ .owner }} logo" loading="lazy">
+          <h2 class="project-card__title"><a href="{{ .url }}">{{ .repo }}</a></h2>
+          <p class="project-card__text">{{ .summary }}</p>
+          <p class="project-card__meta">{{ .contributions }} contributions / {{ .language }}</p>
+        </article>
+      {{ end }}
+    </section>
+  {{ end }}
+{{ end }}
