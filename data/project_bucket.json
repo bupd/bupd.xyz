@@ -1,5 +1,8 @@
 [
   {"repo":"container-registry/harbor-next","url":"https://github.com/container-registry/harbor-next","owner":"container-registry","logo":"https://avatars.githubusercontent.com/u/46576199?v=4","summary":"Next-generation Harbor features before they move upstream.","language":"Go","contributions":201},
   {"repo":"container-registry/harbor-satellite","url":"https://github.com/container-registry/harbor-satellite","owner":"container-registry","logo":"https://avatars.githubusercontent.com/u/46576199?v=4","summary":"Distributed registry and edge-friendly Harbor artifact flows.","language":"Go","contributions":171},
-  {"repo":"goharbor/harbor-cli","url":"https://github.com/goharbor/harbor-cli","owner":"goharbor","logo":"https://avatars.githubusercontent.com/u/40275816?v=4","summary":"Official Harbor CLI maintainership and workflow improvements.","language":"Go","contributions":93}
+  {"repo":"goharbor/harbor-cli","url":"https://github.com/goharbor/harbor-cli","owner":"goharbor","logo":"https://avatars.githubusercontent.com/u/40275816?v=4","summary":"Official Harbor CLI maintainership and workflow improvements.","language":"Go","contributions":93},
+  {"repo":"bupd/aur","url":"https://github.com/bupd/aur","owner":"bupd","logo":"https://avatars.githubusercontent.com/u/89722848?v=4","summary":"AUR package maintenance and Arch Linux packaging automation.","language":"Shell","contributions":266},
+  {"repo":"bupd/arch-bootc-hetzner","url":"https://github.com/bupd/arch-bootc-hetzner","owner":"bupd","logo":"https://avatars.githubusercontent.com/u/89722848?v=4","summary":"Immutable Arch Linux bootc deployment on Hetzner Cloud VPS.","language":"Python","contributions":175},
+  {"repo":"bupd/dotfiles","url":"https://github.com/bupd/dotfiles","owner":"bupd","logo":"https://avatars.githubusercontent.com/u/89722848?v=4","summary":"Arch Linux, Neovim, shell, and terminal workflow configuration.","language":"Lua","contributions":167}
 ]
