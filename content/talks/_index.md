@@ -1,9 +1,12 @@
 ---
 title: "Talks"
 description: "Conference talks, meetup recordings, project updates, and proposals from Prasanth Baskar."
+youtube_playlist_url: "https://youtube.com/playlist?list=PLjf5MAZubBLsnQi7dTKlL0Hi6HFzMYo6O"
 ---
 
 This page collects my talks and recorded sessions from conferences, meetups, and project communities.
+
+The full YouTube playlist is available here: [Conferences & Talks](https://youtube.com/playlist?list=PLjf5MAZubBLsnQi7dTKlL0Hi6HFzMYo6O).
 
 ## Proposal: Manufacturing Software Like Chips
 

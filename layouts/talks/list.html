@@ -3,6 +3,11 @@
     <p class="section-label">Recorded sessions</p>
     <h1 class="page-title">{{ .Title }}</h1>
     {{ with .Description }}<p class="page-description">{{ . }}</p>{{ end }}
+    {{ with .Params.youtube_playlist_url }}
+      <div class="link-row">
+        <a class="button button--ghost" href="{{ . }}">YouTube playlist</a>
+      </div>
+    {{ end }}
   </header>
 
   {{ if .Content }}
