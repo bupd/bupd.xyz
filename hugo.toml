@@ -24,7 +24,7 @@ summaryLength = 28
   tag = "tags"
 
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "JSON"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
   term = ["HTML", "RSS"]
@@ -60,6 +60,10 @@ summaryLength = 28
     name = "Now"
     pageRef = "/now"
     weight = 25
+  [[menus.main]]
+    name = "Search"
+    pageRef = "/search"
+    weight = 28
   [[menus.main]]
     name = "RSS"
     url = "/blogs/index.xml"
