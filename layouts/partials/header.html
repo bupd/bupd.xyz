@@ -1,0 +1,12 @@
+<header class="site-header">
+  <a class="site-header__brand" href="/" aria-label="{{ site.Title }} home">
+    <span class="site-header__mark">b</span>
+    <span>{{ site.Params.handle }}</span>
+  </a>
+  <nav class="site-nav" aria-label="Main navigation">
+    {{ range site.Menus.main }}
+      <a class="site-nav__link" href="{{ .URL }}">{{ .Name }}</a>
+    {{ end }}
+    <a class="site-nav__link" href="{{ site.Params.github }}">GitHub</a>
+  </nav>
+</header>
