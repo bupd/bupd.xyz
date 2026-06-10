@@ -301,6 +301,30 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .split-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .link-list {
+    display: grid;
+    gap: 0.75rem;
+    list-style: none;
+    padding: 0;
+  }
+
+  .link-list__item {
+    background: var(--color-surface);
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+
+  .link-list__item a {
+    font-weight: 700;
+    text-decoration: none;
+  }
+
   .info-card {
     background: var(--color-surface);
     border-radius: var(--radius);
@@ -446,7 +470,8 @@
 @media (max-width: 820px) {
   .hero,
   .post-card,
-  .grid-cards {
+  .grid-cards,
+  .split-grid {
     grid-template-columns: 1fr;
   }
 

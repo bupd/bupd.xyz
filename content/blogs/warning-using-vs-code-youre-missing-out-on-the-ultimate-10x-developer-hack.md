@@ -4,6 +4,7 @@ date: 2023-07-16T01:18:54Z
 description: "A Vim-heavy argument for keyboard-driven editing and less mouse-driven coding."
 tags: ["vscode", "beginners", "productivity", "10xdeveloper"]
 canonicalURL: "https://dev.to/bupd/warning-using-vs-code-youre-missing-out-on-the-ultimate-10x-developer-hack-25d8"
+aliases: ["/bupd/warning-using-vs-code-youre-missing-out-on-the-ultimate-10x-developer-hack-25d8/", "/blog/warning-using-vs-code-youre-missing-out-on-the-ultimate-10x-developer-hack/", "/posts/warning-using-vs-code-youre-missing-out-on-the-ultimate-10x-developer-hack/"]
 reading_time: 3
 ---
 

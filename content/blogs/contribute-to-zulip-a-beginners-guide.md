@@ -4,6 +4,7 @@ date: 2024-03-25T16:56:52Z
 description: "A beginner-friendly guide to getting through Zulip's initial open source development setup."
 tags: ["opensource", "zulip", "docker", "vagrant"]
 canonicalURL: "https://dev.to/bupd/contribute-to-zulip-a-beginners-guide-7fn"
+aliases: ["/bupd/contribute-to-zulip-a-beginners-guide-7fn/", "/blog/contribute-to-zulip-a-beginners-guide/", "/posts/contribute-to-zulip-a-beginners-guide/"]
 reading_time: 4
 ---
 

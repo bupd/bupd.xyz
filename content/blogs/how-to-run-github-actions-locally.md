@@ -4,6 +4,7 @@ date: 2025-10-15T10:06:34Z
 description: "Run GitHub Actions locally with act instead of pushing commits just to debug workflows."
 tags: ["github", "githubactions", "git"]
 canonicalURL: "https://dev.to/bupd/how-to-run-github-actions-locally-398c"
+aliases: ["/bupd/how-to-run-github-actions-locally-398c/", "/blog/how-to-run-github-actions-locally/", "/posts/how-to-run-github-actions-locally/"]
 reading_time: 1
 ---
 

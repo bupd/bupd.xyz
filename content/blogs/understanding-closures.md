@@ -4,6 +4,7 @@ date: 2023-08-29T10:03:00Z
 description: "A short JavaScript closure explanation with a simple outer and inner function example."
 tags: ["webdev", "javascript", "beginners", "tutorial"]
 canonicalURL: "https://dev.to/bupd/understanding-closures-1mm9"
+aliases: ["/bupd/understanding-closures-1mm9/", "/blog/understanding-closures/", "/posts/understanding-closures/"]
 reading_time: 2
 ---
 

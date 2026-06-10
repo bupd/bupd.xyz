@@ -4,7 +4,7 @@ date: 2024-03-26T16:14:55Z
 description: "A personal note on programming as creative work, not just endless grinding."
 tags: ["programming", "productivity", "softwaredevelopment", "archlinux"]
 canonicalURL: "https://dev.to/bupd/programmers-are-not-workhorses-3ie0"
-aliases: ["/blogs/programmers-are-not-workhorses-11n9/"]
+aliases: ["/blogs/programmers-are-not-workhorses-11n9/", "/bupd/programmers-are-not-workhorses-3ie0/", "/bupd/programmers-are-not-workhorses-11n9/", "/blog/programmers-are-not-workhorses/", "/posts/programmers-are-not-workhorses/"]
 reading_time: 5
 ---
 

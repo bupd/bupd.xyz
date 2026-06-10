@@ -1,0 +1,12 @@
+{{- if .IsHome -}}
+{{- $data := dict "@context" "https://schema.org" "@type" "Person" "name" site.Params.author "alternateName" site.Params.handle "url" site.BaseURL "image" site.Params.avatar "sameAs" (slice site.Params.github site.Params.devto site.Params.hashnode site.Params.twitter) "jobTitle" "Open Source Software Engineer" "knowsAbout" (slice "Kubernetes" "Harbor" "OCI artifacts" "Platform engineering" "Software supply chains") -}}
+<script type="application/ld+json">
+{{ $data | jsonify | safeJS }}
+</script>
+{{- else if and .IsPage (eq .Section "blogs") -}}
+{{- $author := dict "@type" "Person" "name" site.Params.author "url" site.BaseURL -}}
+{{- $data := dict "@context" "https://schema.org" "@type" "BlogPosting" "headline" .Title "description" (.Description | default site.Params.description) "url" .Permalink "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00") "author" $author -}}
+<script type="application/ld+json">
+{{ $data | jsonify | safeJS }}
+</script>
+{{- end -}}
