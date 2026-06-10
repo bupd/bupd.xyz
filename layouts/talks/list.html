@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <header class="page-header">
+    <p class="section-label">Recorded sessions</p>
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="page-description">{{ . }}</p>{{ end }}
+  </header>
+
+  {{ if .Content }}
+    <article class="article">
+      <div class="prose">{{ .Content }}</div>
+    </article>
+  {{ end }}
+
+  <section class="talk-grid" aria-label="Talk recordings">
+    {{ range .Pages.ByWeight }}
+      {{ partial "talk-card.html" . }}
+    {{ end }}
+  </section>
+{{ end }}

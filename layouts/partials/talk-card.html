@@ -1,0 +1,20 @@
+<article class="talk-card">
+  {{ with .Params.youtube_id }}
+    <a class="talk-card__thumb" href="{{ $.RelPermalink }}" aria-label="Watch {{ $.Title }}">
+      <img src="https://i.ytimg.com/vi/{{ . }}/hqdefault.jpg" alt="{{ $.Title }} thumbnail" loading="lazy">
+    </a>
+  {{ end }}
+  <div class="talk-card__body">
+    <div class="talk-card__meta">
+      {{ with .Params.source }}<span>{{ . }}</span>{{ end }}
+      {{ with .Params.duration }}<span>{{ . }}</span>{{ end }}
+    </div>
+    <h2 class="talk-card__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <p class="talk-card__summary">{{ .Description }}</p>
+    {{ with .Params.tags }}
+      <div class="tags" aria-label="Tags">
+        {{ range first 3 . }}<a class="tags__item" href="{{ "tags/" | relURL }}{{ . | urlize }}/">{{ . }}</a>{{ end }}
+      </div>
+    {{ end }}
+  </div>
+</article>
