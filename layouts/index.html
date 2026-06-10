@@ -1,0 +1,58 @@
+{{ define "main" }}
+  <section class="hero">
+    <div>
+      <p class="hero__eyebrow">Open source software engineer</p>
+      <h1 class="hero__title">Prasanth Baskar</h1>
+      <p class="hero__summary">I work on Harbor, container registries, Kubernetes, platform engineering, Linux, and developer tooling. This is my home on the internet for notes, essays, and experiments.</p>
+      <div class="hero__links">
+        <a class="button" href="/blogs/">Read the blog</a>
+        <a class="button button--ghost" href="/about/">About me</a>
+      </div>
+    </div>
+    <aside class="profile-card" aria-label="Profile summary">
+      <img class="profile-card__image" src="{{ site.Params.avatar }}" alt="Prasanth Baskar">
+      <div class="profile-card__body">
+        <strong>@{{ site.Params.handle }}</strong>
+        <p class="profile-card__meta">Maintainer @goharbor CLI. Open source software engineer @8gears and @container-registry. India.</p>
+      </div>
+    </aside>
+  </section>
+
+  <section class="section">
+    <div class="section__header">
+      <div>
+        <p class="section-label">Recent writing</p>
+        <h2 class="section__title">Blogs</h2>
+      </div>
+      <a class="button button--ghost" href="/blogs/">All posts</a>
+    </div>
+    <div class="post-list">
+      {{ range first 6 (where site.RegularPages "Section" "blogs") }}
+        {{ partial "post-card.html" . }}
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section__header">
+      <div>
+        <p class="section-label">Current lanes</p>
+        <h2 class="section__title">What I write about</h2>
+      </div>
+    </div>
+    <div class="grid-cards">
+      <article class="info-card">
+        <h3 class="info-card__title">Platform engineering</h3>
+        <p class="info-card__text">GitOps, Kubernetes, OCI artifacts, supply chains, and the systems that make software production boring and repeatable.</p>
+      </article>
+      <article class="info-card">
+        <h3 class="info-card__title">Open source</h3>
+        <p class="info-card__text">Harbor, CNCF projects, maintainership, community work, and the reality of building public infrastructure.</p>
+      </article>
+      <article class="info-card">
+        <h3 class="info-card__title">Developer systems</h3>
+        <p class="info-card__text">Arch Linux, Neovim, tmux, local automation, and the tools that make programmers faster without hiding the machine.</p>
+      </article>
+    </div>
+  </section>
+{{ end }}

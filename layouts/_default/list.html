@@ -1,0 +1,24 @@
+{{ define "main" }}
+  <header class="page-header">
+    <p class="section-label">{{ .Section | default "Index" }}</p>
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="page-description">{{ . }}</p>{{ end }}
+    {{ if eq .Section "blogs" }}
+      <div class="link-row">
+        <a class="button button--ghost" href="/blogs/index.xml">RSS feed</a>
+      </div>
+    {{ end }}
+  </header>
+
+  {{ if .Content }}
+    <article class="article">
+      <div class="prose">{{ .Content }}</div>
+    </article>
+  {{ end }}
+
+  <div class="post-list">
+    {{ range .Pages }}
+      {{ partial "post-card.html" . }}
+    {{ end }}
+  </div>
+{{ end }}

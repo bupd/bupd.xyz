@@ -1,0 +1,53 @@
+baseURL = "https://bupd.xyz/"
+languageCode = "en-us"
+title = "Prasanth Baskar"
+copyright = "Copyright (c) 2026 Prasanth Baskar"
+enableRobotsTXT = true
+summaryLength = 28
+
+[params]
+  description = "Prasanth Baskar writes about open source, Kubernetes, Harbor, platform engineering, Linux, and developer tools."
+  author = "Prasanth Baskar"
+  handle = "bupd"
+  avatar = "https://avatars.githubusercontent.com/u/89722848?v=4"
+  github = "https://github.com/bupd"
+  devto = "https://dev.to/bupd"
+  hashnode = "https://bupd.hashnode.dev/"
+  twitter = "https://twitter.com/prasanthbupd"
+  email = "mailto:bupdprasanth@gmail.com"
+
+[permalinks]
+  blogs = "/blogs/:slug/"
+
+[taxonomies]
+  tag = "tags"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[services]
+  [services.rss]
+    limit = 20
+
+[menus]
+  [[menus.main]]
+    name = "Blogs"
+    pageRef = "/blogs"
+    weight = 10
+  [[menus.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 20
+  [[menus.main]]
+    name = "RSS"
+    url = "/blogs/index.xml"
+    weight = 30

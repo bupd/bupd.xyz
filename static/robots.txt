@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bupd.xyz/sitemap.xml

@@ -1,0 +1,24 @@
+{{ define "main" }}
+  <article class="article">
+    <header>
+      <div class="article__meta">
+        {{ with .Date }}<time datetime="{{ .Format "2006-01-02" }}">{{ .Format "Jan 2, 2006" }}</time>{{ end }}
+        {{ with .Params.reading_time }}<span>{{ . }} min read</span>{{ end }}
+      </div>
+      <h1 class="article__title">{{ .Title }}</h1>
+      {{ with .Description }}<p class="article__description">{{ . }}</p>{{ end }}
+      {{ with .Params.tags }}
+        <div class="tags" aria-label="Tags">
+          {{ range . }}<a class="tags__item" href="{{ "tags/" | relURL }}{{ . | urlize }}/">{{ . }}</a>{{ end }}
+        </div>
+      {{ end }}
+    </header>
+    <div class="prose">
+      {{ .Content }}
+      {{ with .Params.canonicalURL }}
+        <hr>
+        <p class="muted">Originally published at <a href="{{ . }}">{{ . }}</a>.</p>
+      {{ end }}
+    </div>
+  </article>
+{{ end }}
