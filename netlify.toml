@@ -22,3 +22,28 @@
   from = "/rss.xml"
   to = "/blogs/index.xml"
   status = 301
+
+[[redirects]]
+  from = "/blog/:slug"
+  to = "/blogs/:slug/"
+  status = 301
+
+[[redirects]]
+  from = "/posts/:slug"
+  to = "/blogs/:slug/"
+  status = 301
+
+[[redirects]]
+  from = "/bupd/:slug"
+  to = "/blogs/:slug/"
+  status = 301
+
+[[redirects]]
+  from = "/manufacutring-software-like-chips"
+  to = "/blogs/manufacutring-software-like-chips/"
+  status = 301
+
+[[redirects]]
+  from = "/manufacturing-software-like-chips"
+  to = "/blogs/manufacutring-software-like-chips/"
+  status = 301

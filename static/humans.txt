@@ -1,0 +1,9 @@
+/* TEAM */
+Owner: Prasanth Baskar
+Site: https://bupd.xyz
+GitHub: https://github.com/bupd
+
+/* SITE */
+Built with: Hugo
+Hosted on: Netlify
+Content: Markdown files in this repository

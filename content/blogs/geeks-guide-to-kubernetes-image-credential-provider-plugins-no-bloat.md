@@ -4,6 +4,7 @@ date: 2025-08-30T19:02:50Z
 description: "A step-by-step Kind setup for Kubernetes image credential provider plugins."
 tags: ["kubernetes", "devops", "architecture", "docker"]
 canonicalURL: "https://bupd.hashnode.dev/geeks-guide-to-kubernetes-image-credential-provider-plugins-no-bloat"
+aliases: ["/bupd/geeks-guide-to-kubernetes-image-credential-provider-plugins-no-bloat-54mh/", "/blog/geeks-guide-to-kubernetes-image-credential-provider-plugins-no-bloat/", "/posts/geeks-guide-to-kubernetes-image-credential-provider-plugins-no-bloat/"]
 reading_time: 5
 ---
 

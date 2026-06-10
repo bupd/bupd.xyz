@@ -4,6 +4,7 @@ date: 2023-11-19T13:47:07Z
 description: "A browser developer-tools trick for simple client-side content overlays."
 tags: ["programming", "tutorial", "cybersecurity"]
 canonicalURL: "https://dev.to/bupd/bypass-website-paywalls-sign-up-to-continue-with-this-simple-hack-3jdd"
+aliases: ["/bupd/bypass-website-paywalls-sign-up-to-continue-with-this-simple-hack-3jdd/", "/blog/bypass-website-paywalls-sign-up-to-continue-with-this-simple-hack/", "/posts/bypass-website-paywalls-sign-up-to-continue-with-this-simple-hack/"]
 reading_time: 3
 ---
 
