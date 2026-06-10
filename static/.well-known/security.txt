@@ -1,0 +1,3 @@
+Contact: mailto:bupdprasanth@gmail.com
+Preferred-Languages: en
+Canonical: https://bupd.xyz/.well-known/security.txt
