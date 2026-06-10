@@ -1,1 +1,5 @@
-[]
+[
+  {"repo":"container-registry/harbor-next","url":"https://github.com/container-registry/harbor-next","owner":"container-registry","logo":"https://avatars.githubusercontent.com/u/46576199?v=4","summary":"Next-generation Harbor features before they move upstream.","language":"Go","contributions":201},
+  {"repo":"container-registry/harbor-satellite","url":"https://github.com/container-registry/harbor-satellite","owner":"container-registry","logo":"https://avatars.githubusercontent.com/u/46576199?v=4","summary":"Distributed registry and edge-friendly Harbor artifact flows.","language":"Go","contributions":171},
+  {"repo":"goharbor/harbor-cli","url":"https://github.com/goharbor/harbor-cli","owner":"goharbor","logo":"https://avatars.githubusercontent.com/u/40275816?v=4","summary":"Official Harbor CLI maintainership and workflow improvements.","language":"Go","contributions":93}
+]
