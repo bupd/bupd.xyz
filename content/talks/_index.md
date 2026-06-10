@@ -1,9 +1,11 @@
 ---
 title: "Talks"
-description: "Talks, proposals, and conference ideas from Prasanth Baskar."
+description: "Conference talks, meetup recordings, project updates, and proposals from Prasanth Baskar."
 ---
 
-## Manufacturing Software Like Chips
+This page collects my talks and recorded sessions from conferences, meetups, and project communities.
+
+## Proposal: Manufacturing Software Like Chips
 
 **Track:** Platform Engineering  
 **Format:** Lightning Talk, 5 minutes  
