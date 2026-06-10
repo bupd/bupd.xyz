@@ -485,6 +485,35 @@
     text-align: center;
   }
 
+  .project-bucket {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .project-card {
+    background: var(--color-surface);
+    border-radius: var(--radius);
+    padding: 1rem;
+  }
+
+  .project-card__logo {
+    border-radius: 1rem;
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .project-card__title {
+    font-size: 1.15rem;
+    margin-top: 0.8rem;
+  }
+
+  .project-card__text,
+  .project-card__meta {
+    color: var(--color-muted);
+    margin-top: 0.5rem;
+  }
+
   .talk-grid {
     display: grid;
     gap: 1rem;
@@ -702,7 +731,8 @@
   .post-card,
   .grid-cards,
   .split-grid,
-  .talk-grid {
+  .talk-grid,
+  .project-bucket {
     grid-template-columns: 1fr;
   }
 

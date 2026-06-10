@@ -1,6 +1,7 @@
 ---
 title: "Projects"
 description: "Open source and personal projects from Prasanth Baskar."
+layout: "projects"
 ---
 
 These are the workstreams I want this site to point people toward.
