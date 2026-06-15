@@ -20,6 +20,13 @@ A compact tmux status-bar widget showing Claude Code and Codex CLI usage windows
 
 - [github.com/bupd/context-usage-tmux](https://github.com/bupd/context-usage-tmux)
 
+## shitpost
+
+A self-hosted Telegram bot for crossposting to social platforms. Send text, images, captions, and alt text from Telegram, then publish through a small Go wrapper around `crosspost`.
+
+- [shitpost.bupd.xyz](https://shitpost.bupd.xyz)
+- [github.com/bupd/shitpost](https://github.com/bupd/shitpost)
+
 ## arch-bootc-hetzner
 
 Deploy Arch Linux as an immutable bootable container on Hetzner Cloud VPS. The idea is simple: treat the OS as an OCI-managed artifact with atomic upgrades and rollback support.
