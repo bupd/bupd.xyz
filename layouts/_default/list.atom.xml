@@ -1,0 +1,66 @@
+{{- $pages := .RegularPages -}}
+{{- if .IsHome -}}
+  {{- $pages = where site.RegularPages "Section" "blogs" -}}
+{{- end -}}
+{{- $pages = $pages.ByDate.Reverse -}}
+{{- $limit := site.Config.Services.RSS.Limit | default 20 -}}
+{{- if ge $limit 1 -}}
+  {{- $pages = first $limit $pages -}}
+{{- end -}}
+{{- $self := .OutputFormats.Get "ATOM" -}}
+{{- $email := replaceRE "^mailto:" "" site.Params.email -}}
+{{- $feedTitle := site.Title -}}
+{{- $updated := now -}}
+{{- with index $pages 0 -}}
+  {{- $updated = .Lastmod -}}
+{{- end -}}
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <generator uri="https://gohugo.io/" version="{{ hugo.Version }}">Hugo</generator>
+  <link href="{{ with $self }}{{ .Permalink | htmlEscape }}{{ else }}{{ .Permalink | htmlEscape }}{{ end }}" rel="self" type="application/atom+xml" />
+  <link href="{{ .Permalink | htmlEscape }}" rel="alternate" type="text/html" />
+  <updated>{{ $updated.Format "2006-01-02T15:04:05Z07:00" }}</updated>
+  <id>{{ with $self }}{{ .Permalink | htmlEscape }}{{ else }}{{ .Permalink | htmlEscape }}{{ end }}</id>
+  <title type="html">{{ $feedTitle | htmlEscape }}</title>
+  <subtitle>{{ site.Params.description | htmlEscape }}</subtitle>
+  <author>
+    <name>{{ site.Params.author | htmlEscape }}</name>
+    {{- with $email }}
+    <email>{{ . | htmlEscape }}</email>
+    {{- end }}
+  </author>
+  {{- range $pages }}
+    {{- $image := site.Params.avatar -}}
+    {{- with .Params.image -}}
+      {{- $image = . | absURL -}}
+    {{- else -}}
+      {{- with .Params.images -}}
+        {{- $image = index . 0 | absURL -}}
+      {{- end -}}
+    {{- end }}
+  <entry>
+    <title type="html">{{ .Title | htmlEscape }}</title>
+    <link href="{{ .Permalink | htmlEscape }}" rel="alternate" type="text/html" title="{{ .Title | htmlEscape }}" />
+    <published>{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}</published>
+    <updated>{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}</updated>
+    <id>{{ .Permalink | htmlEscape }}</id>
+    <content type="html" xml:base="{{ .Permalink | htmlEscape }}"><![CDATA[{{ replace .Content "]]>" "]]&gt;" | safeHTML }}]]></content>
+    <author>
+      <name>{{ site.Params.author | htmlEscape }}</name>
+      {{- with $email }}
+      <email>{{ . | htmlEscape }}</email>
+      {{- end }}
+    </author>
+    {{- range .Params.tags }}
+    <category term="{{ . | urlize }}" />
+    {{- end }}
+    {{- with .Description }}
+    <summary type="html"><![CDATA[{{ . }}]]></summary>
+    {{- end }}
+    {{- with $image }}
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{{ . | htmlEscape }}" />
+    <media:content medium="image" url="{{ . | htmlEscape }}" xmlns:media="http://search.yahoo.com/mrss/" />
+    {{- end }}
+  </entry>
+  {{- end }}
+</feed>

@@ -16,4 +16,4 @@ hugo --gc --minify
 
 ## Writing posts
 
-Add Markdown files under `content/blogs/`. Hugo publishes each file at `/blogs/<slug>/` and exposes the blog RSS feed at `/blogs/index.xml`.
+Add Markdown files under `content/blogs/`. Hugo publishes each file at `/blogs/<slug>/` and exposes the rich blog feed at `/feed.xml`.
