@@ -14,13 +14,8 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
 
 [[redirects]]
-  from = "/feed.xml"
-  to = "/blogs/index.xml"
-  status = 301
-
-[[redirects]]
   from = "/rss.xml"
-  to = "/blogs/index.xml"
+  to = "/feed.xml"
   status = 301
 
 [[redirects]]

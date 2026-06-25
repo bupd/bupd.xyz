@@ -17,6 +17,17 @@ summaryLength = 28
   email = "mailto:bupdprasanth@gmail.com"
   linkedin = "https://www.linkedin.com/in/prasanth-baskar/"
 
+[mediaTypes]
+  [mediaTypes."application/atom+xml"]
+    suffixes = ["xml"]
+
+[outputFormats]
+  [outputFormats.Atom]
+    mediaType = "application/atom+xml"
+    baseName = "feed"
+    isPlainText = true
+    notAlternative = false
+
 [permalinks]
   blogs = "/blogs/:slug/"
 
@@ -24,8 +35,8 @@ summaryLength = 28
   tag = "tags"
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
-  section = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "ATOM", "JSON"]
+  section = ["HTML", "RSS", "ATOM"]
   taxonomy = ["HTML", "RSS"]
   term = ["HTML", "RSS"]
 
@@ -74,5 +85,5 @@ summaryLength = 28
     weight = 28
   [[menus.main]]
     name = "RSS"
-    url = "/blogs/index.xml"
+    url = "/feed.xml"
     weight = 30
